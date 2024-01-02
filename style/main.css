@@ -1,0 +1,116 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+  background-color: #f08f90; /* Color de fondo rosa claro */
+  color: #db5a6b; /* Color de texto rojo ciruela */
+  font-family: "Verdana", sans-serif; /* Tipo de fuente Verdana */
+}
+
+/* Estilos para el título de la página */
+#titulo {
+  color: #f47983; /* Color rosa melocotón para el título */
+}
+
+/* PALETA DE COLORES
+
+#F08F90 - Un tono de rosa claro.
+#F47983 - Un tono de rosa melocotón.
+#DB5A6B - Un rojo ciruela.
+#C93756 - Un rojo carmesí medio.
+#351E1C - Black kite (bird species)
+
+la fuente de los colores aca:
+https://en.wikipedia.org/wiki/Traditional_colors_of_Japan#:~:text=URL%3A%20https%3A%2F%2Fen
+
+*/
+
+/* Estilos para el contenedor de los círculos */
+#circulos {
+  position: relative;
+  width: 200px; /* Ancho igual al diámetro del círculo más grande */
+  height: 200px; /* Alto igual al diámetro del círculo más grande */
+  margin: 50px auto; /* Centrar el contenedor horizontalmente */
+}
+
+/* Estilos base para cada círculo */
+.circulo {
+  border: 2px solid black; /* Borde negro para los círculos */
+  border-radius: 50%; /* Hacer los círculos completamente redondos */
+  position: absolute;
+  top: 50%; /* Centrar verticalmente dentro del contenedor */
+  left: 50%; /* Centrar horizontalmente dentro del contenedor */
+  transform: translate(-50%, -50%); /* Ajuste para centrar exactamente */
+
+  transition: background-color 0.5s ease; /* Transición suave para el color de fondo */
+}
+
+/* Tamaños específicos para cada círculo */
+#circulo1 {
+  width: 200px;
+  height: 200px;
+}
+#circulo2 {
+  width: 150px;
+  height: 150px;
+}
+#circulo3 {
+  width: 100px;
+  height: 100px;
+}
+#circulo4 {
+  width: 50px;
+  height: 50px;
+}
+
+/* Estilos para el label del checkbox */
+label {
+  color: #351e1c; /* Color del texto */
+  box-shadow: 0 10px 5px #c93756; /* Sombra para dar efecto visual */
+}
+
+/* Estilos aplicados cuando la ventana es menor a 500px */
+.resolucion-baja select,
+.resolucion-baja input[type="checkbox"] {
+  opacity: 0.5; /* Reducir la opacidad para indicar que están deshabilitados */
+  pointer-events: none; /* Evitar que se puedan seleccionar o clickear */
+}
+
+.resolucion-baja .circulo {
+  /* Anular la transición en baja resolución */
+  transition: none;
+}
+
+.container-btns {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+#resetButton {
+  margin-left: 1.5rem;
+}
+
+.btn-style {
+  border-radius: 3rem;
+  padding: 8px;
+  background-color: #2e211b;
+  color: #fff;
+  cursor: pointer;
+}
+
+.picture {
+  width: 400px;
+  height: auto;
+  border-radius: 3rem;
+}
+
+.container-img {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-bottom: 5rem;
+}

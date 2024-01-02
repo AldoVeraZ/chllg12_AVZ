@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japanese Culture</title>
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <h1 id="titulo"></h1>
+
+    <!-- Sección para agregar y quitar colores -->
+    <div class="container-btns">
+      <input type="text" id="colorName" placeholder="Nombre del color" />
+      <input type="text" id="colorCode" placeholder="Código del color" />
+      <button id="addColorButton" class="btn-style">Agregar Color</button>
+      <button id="removeColorButton" class="btn-style">Quitar Color</button>
+    </div>
+    <div class="container-btns">
+      <select id="colorSelector"></select>
+      <input type="checkbox" id="modoSuperpuesto" />
+      <label for="modoSuperpuesto">Modo superpuesto</label>
+      <button id="resetButton" class="btn-style">Resetear Colores</button>
+    </div>
+
+    <div id="circulos">
+      <div class="circulo" id="circulo1"></div>
+      <div class="circulo" id="circulo2"></div>
+      <div class="circulo" id="circulo3"></div>
+      <div class="circulo" id="circulo4"></div>
+    </div>
+
+    <div class="container-img">
+      <img src="./img/samurai.jpg" class="picture" alt="" />
+      <img src="./img/sam2.jpg" alt="" class="picture" />
+      <img src="./img/sam3.jpg" class="picture" alt="" />
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
