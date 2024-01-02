@@ -37,12 +37,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Evento para agregar un nuevo color
   addButton.addEventListener("click", () => {
-    const colorName = document.getElementById("colorName").value;
-    const colorCode = document.getElementById("colorCode").value;
+    const colorNameInput = document.getElementById("colorName");
+    const colorCodeInput = document.getElementById("colorCode");
+
+    const colorName = colorNameInput.value;
+    const colorCode = colorCodeInput.value;
+
     if (colorName && colorCode) {
       colors.push({ name: colorName, code: colorCode });
       updateColorSelect();
       saveColorsToLocalStorage(); // Guardar colores actualizados en localStorage
+
+      // Vaciar los campos de entrada después de agregar el color
+      colorNameInput.value = "";
+      colorCodeInput.value = "";
     }
   });
 
